@@ -8,7 +8,7 @@ df = pd.read_csv('data/churn.csv')
 x , y = df.drop('Churn', axis=1), df['Churn']
 x,xt,y,yt = train_test_split(x,y , test_size=0.2)
 
-
+e = 1
 with mlflow.start_run():
     model = RandomForestClassifier()
     model.fit(x,y)
