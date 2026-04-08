@@ -1,0 +1,23 @@
+artifact_path: /home/aswin/DL/pr1/mlruns/0/models/m-14b659e0b880405d9ead5ab97dadc741/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+mlflow_version: 3.10.1
+model_id: m-14b659e0b880405d9ead5ab97dadc741
+model_size_bytes: 18405120
+model_uuid: m-14b659e0b880405d9ead5ab97dadc741
+prompts: null
+run_id: c7a859118b0348c0ab1cc5e836001f71
+utc_time_created: '2026-04-08 16:14:28.747004'
