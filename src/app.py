@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 setup_logging()
 
-model = mlflow.pyfunc.load_model('mlflow/0/models/m-07f50c975067406d8c48f13132d1220d/artifacts')
+model = mlflow.pyfunc.load_model("mlruns/0/models/m-07f50c975067406d8c48f13132d1220d/artifacts")
 
 @app.route('/predict', methods = ['POST'])
 def predict():
