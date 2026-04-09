@@ -6,6 +6,7 @@ from logging_config import setup_logging
 import mlflow
 import numpy as np
 
+
 app = Flask(__name__)
 
 setup_logging()

@@ -1,27 +1,30 @@
 name: deploy
 
-on:
+on: 
   push:
     branches:
       - main
 
 jobs:
-  test-and-deploy:
+  test:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v3
+      - name: setup 
+        uses: actions/checkout@v3
 
-    - name: Setup python1
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
+      - name: python
+        uses: actions/python@v4
+        with:
+          python-version: '3.9'
 
-    - name: req
-      run: pip install -r requirements.txt
+      - name: req
+        run: pip instal -r reqirments.txt
 
-    - name: run
-      run: python src/app.py
+      - name: run
+        run: python src/app.py
 
 
     
-    
+
+          
