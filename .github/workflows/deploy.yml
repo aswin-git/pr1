@@ -19,7 +19,7 @@ jobs:
           python-version: '3.9'
 
       - name: req
-        run: pip instal -r reqirments.txt
+        run: pip install -r reqirments.txt
 
       - name: run
         run: python src/app.py
